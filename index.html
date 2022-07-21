@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>La casa de Vera - Reservas</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Lista de huespedes</h3>
+                <form id="formulario">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input id="nombre" class="form-control" type="text" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Apellido</label>
+                        <input id="apellido" class="form-control" type="text" placeholder="Ingresa tu apellido">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Edad</label>
+                        <input id="edad" class="form-control" type="text" placeholder="Ingresa tu edad">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-light">Registrar</button>
+                    </div>
+                    <div class="errores">
+                        <h4>Tienes que rellenar todos los campos</h4>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-md-6">
+                <table id="tablaPersonas" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>Edad</td>
+                        </tr>
+                        </th>
+                        
+                        <tbody class="tabla">
+                            
+                        </tbody>
+                        
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
