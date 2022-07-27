@@ -14,32 +14,33 @@
 <body>
 
     <header class="header">
+        <img src="images/logo.png" alt="logo" class="logo">
         <h3>La casa de Vera</h3>
-        <img src="images/logo.png" alt="">
     </header>
+
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-6">
-                <h3>Lista de huespedes</h3>
-                <form id="formulario">
+                <h3>¿Quiénes viajan?</h3>
+                <form id="formularioPersonas">
                     <div class="mb-3">
                         <label class="form-label">Nombre</label>
-                        <input id="nombre" class="form-control" type="text" placeholder="Ingresa tu nombre">
+                        <input id="nombre" class="form-control" type="text" placeholder="Ingresa el nombre">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Apellido</label>
-                        <input id="apellido" class="form-control" type="text" placeholder="Ingresa tu apellido">
+                        <input id="apellido" class="form-control" type="text" placeholder="Ingresa el apellido">
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Edad</label>
-                        <input id="edad" class="form-control" type="text" placeholder="Ingresa tu edad">
+                        <input id="edad" class="form-control" type="text" placeholder="Ingresa la edad">
                     </div>
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-light">Registrar</button>
                     </div>
-                    <div class="errores">
-                        <h4>Tienes que rellenar todos los campos</h4>
+                    <div class="error1">
+                        <h4>Tienes que completar todos los campos</h4>
                     </div>
                 </form>
             </div>
@@ -54,17 +55,53 @@
                             <td>Edad</td>
                         </tr>
                         </th>
-                        
-                        <tbody class="tabla">
-                            
-                        </tbody>
-                        
+
+                    <tbody class="tabla">
+
+                    </tbody>
+
                 </table>
             </div>
         </div>
     </div>
 
-<script src="js/main.js"></script>
+    <div class="container mt-3">
+        <div class="col-md-6">
+
+            <h3>¿Cuantos dias van a quedarse?</h3>
+            <form id="formularioTiempo">
+                <div class="mb-3">
+                    <label class="form-label"></label>
+                    <input id="dias" class="form-control" type="number" placeholder="Ingresa la cantidad de dias que van a hospedarse">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-light">Calcular</button>
+                </div>
+                <div class="error2">
+                    <h4>Tienes que completar el campo</h4>
+                </div>
+                <div class="errorTiempoMax">
+                    <h4>La estadia maxima es de 30 dias</h4>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col-md-6">
+            <h4>Precio final:</h4>
+            <div id="precioFinal">
+
+            </div>
+
+        </div>
+    
+
+    </div>
+
+    
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

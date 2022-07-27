@@ -7,6 +7,11 @@
     color:white
 }
 
+.logo {
+    padding-left: 100px;
+
+}
+
 .header h3 {
     padding-left: 30px;
     padding-right: 10px;
@@ -31,3 +36,4 @@
     border: 2px solid #D05663;
     border-radius: 10px;
 }
+
